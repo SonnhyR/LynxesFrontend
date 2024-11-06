@@ -1,0 +1,13 @@
+.limpieza-container {  
+    text-align: center; /* Centra el contenido */  
+    padding: 20px; /* Agrega espacio alrededor */  
+}  
+
+.hero-image {  
+    max-width: 100%; /* Métricas responsivas */  
+    height: auto; /* Mantiene la proporción de la imagen */  
+}  
+
+.services-description {  
+    margin-top: 20px; /* Espacio entre la imagen y el texto */  
+}

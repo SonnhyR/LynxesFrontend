@@ -1,0 +1,153 @@
+
+/* Estilos globales */  
+
+.logo-container {  
+    text-align: left; /* Centra el logo dentro del contenedor */  
+    padding:20px; /* Espaciado alrededor del logo */  
+   }  
+   
+   #logo {  
+    width:150px; /* Ajusta el ancho según tus necesidades */  
+    height: auto; /* Mantiene la proporción de la imagen */  
+    transition: transform0.2s ease; /* Agrega un efecto de transformación suave */  
+   }  
+   
+   #logo:hover {  
+    transform: scale(1.1); /* Efecto zoom al pasar el cursor */  
+   } 
+body {  
+    margin:0;  
+    font-family: 'Arial', sans-serif; /* Cambia por la fuente que prefieras */  
+    background-color: white; /* Fondo blanco */  
+    color: #333; /* Color del texto */  
+   }  
+   
+   nav {  
+    background-color: black; /* Fondo del navbar negro */  
+    padding:10px20px; /* Espaciado interno */  
+   }  
+   
+   nav ul {  
+    list-style: none; /* Eliminar viñetas */  
+    padding:0; /* Eliminar padding */  
+    margin:0; /* Eliminar margin */  
+    display: flex; /* Usar flexbox para alinear horizontalmente */ 
+    justify-content: flex-end; /* Alinear a la derecha */  
+ 
+   }  
+   
+   nav ul li {  
+    position: relative; /* Hacer relativo para el submenú */  
+    margin:015px; /* Espaciado entre cada opción del menú */  
+   }  
+   
+   nav ul li a {  
+    text-decoration: none; /* Sin subrayado */  
+    color: silver; /* Texto plateado */  
+    font-size:18px; /* Tamaño de la letra */  
+    transition: color0.3s ease; /* Efecto de transición suave para el color */  
+   }  
+   
+   nav ul li a:hover {  
+    color: #fff; /* Color al pasar el cursor (se vuelve blanco) */  
+    text-shadow:0010px rgba(255,255,255,0.7); /* Efecto de "iluminación" */  
+   }  
+   
+   /* Submenú */  
+   .submenu {  
+ visibility: hidden; /* Ocultar el submenú por defecto */  
+ opacity:0; /* Transición de opacidad */  
+ position: absolute;  
+ top:100%;  
+ left:0;  
+ background-color: black;  
+ padding:10px0;  
+ z-index:1000;  
+ transition: visibility0s, opacity0.3s ease; /* Transición suave */  
+}  
+
+nav ul li:hover .submenu {  
+ visibility: visible; /* Hacer visible */  
+ opacity:1; /* Hacer completamente opaco */ 
+ display: block; /* Mostrar el submenú cuando el cursor está sobre el li */  
+ 
+}
+   
+   .submenu li {  
+    margin:0; /* Sin margen para los items del submenú */  
+   }  
+   
+   .submenu li a {  
+
+    padding:10px20px; /* Espaciado interno en los enlaces del submenú */  
+    color: silver; /* Texto plateado para el submenú */  
+    transition: background-color0.3s ease; /* Transición para el fondo */  
+   }  
+   
+   .submenu li a:hover {  
+    background-color: rgba(255,255,255,0.1); /* Fondo al pasar el cursor sobre el submenú */  
+   }  
+
+   body {  
+    font-family: 'Arial', sans-serif; /* Cambia a una fuente más elegante si lo deseas */  
+    line-height:1.6; /* Mejora la legibilidad del texto */  
+    margin:0;  
+    padding:0;  
+   }  
+   
+   /* Estilo para el Encabezado H2 */  
+   h2 {  
+    text-align: center; /* Centra el texto */  
+    font-family: 'Georgia', serif; /* Cambia a un tipo de letra más elegante */  
+    font-size:24px; /* Tamaño de fuente */  
+    margin:20px0; /* Margen superior e inferior */  
+    color: #333; /* Color del texto */  
+   }  
+   
+   /* Estilo para la Propuesta de Valor */  
+   .valor-item {  
+    display: flex; /* Utiliza flexbox para alinear imágenes y texto */  
+    align-items: center; /* Alinea verticalmente al centro */  
+    margin:20px0; /* Espaciado entre elementos */  
+   }  
+   
+   /* Imagen de Propuesta de Valor */  
+   .valor-item img {  
+    width:100px; /* Ajusta el ancho según sea necesario */  
+    height: auto; /* Mantiene la proporción de la imagen */  
+    margin:020px; /* Espacio alrededor de la imagen */  
+   }  
+   
+   /* Texto de Propuesta de Valor */  
+   .valor-item p {  
+    flex:1; /* Permite que el texto ocupe el espacio disponible */  
+    padding:10px; /* Espacio interno */  
+   }  
+   
+   /* Intercalar el contenido de la propuesta de valor */  
+   .valor-item:nth-child(odd) {  
+    flex-direction: row; /* Imagen a la izquierda y texto a la derecha */  
+   }  
+   
+   .valor-item:nth-child(even) {  
+    flex-direction: row-reverse; /* Imagen a la derecha y texto a la izquierda */  
+   }  
+   
+   /* Estilo del Footer */  
+   footer {  
+    text-align: center; /* Centra el contenido del pie de página */  
+    padding:20px; /* Espacio interno del pie de página */  
+    background-color: #f5f5f5; /* Color de fondo del pie de página */  
+    border-top:1px solid #ddd; /* Límite en la parte superior */  
+   }
+   
+   /* Estilo del footer */  
+   footer {  
+    background-color: black; /* Fondo del footer negro */  
+    color: silver; /* Texto plateado */  
+    text-align: center; /* Centrar texto */  
+    padding:20px; /* Espaciado vertical del footer */  
+    position: relative; /* Para el posicionado */  
+    bottom:0; /* Asegura que esté en la parte inferior */  
+    width:100%; /* Ancho completo */  
+   }

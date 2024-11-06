@@ -1,0 +1,16 @@
+.historia-container {  
+    max-width: 800px;  
+    margin: 0 auto; /* Centramos el contenido */  
+    padding: 20px;  
+    background-color: #f9f9f9; /* Fondo gris claro */  
+    border: 1px solid #ddd; /* Borde suave */  
+    border-radius: 8px; /* Bordes redondeados */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}  
+
+.historia-container p {  
+    line-height: 1.6; /* Mejora la legibilidad */  
+    font-size: 16px; /* Tamaño de texto estándar */  
+    color: #555; /* Color gris para el texto */  
+    margin-bottom: 15px; /* Espacio entre párrafos */  
+}  

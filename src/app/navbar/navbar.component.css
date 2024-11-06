@@ -1,0 +1,66 @@
+nav {  
+    
+  background-color: black; /* Fondo del navbar negro */  
+    padding:10px20px; /* Espaciado interno */  
+   }  
+   
+   nav ul {  
+    list-style: none; /* Eliminar viñetas */  
+    padding:0; /* Eliminar padding */  
+    margin:0; /* Eliminar margin */  
+    display: flex; /* Usar flexbox para alinear horizontalmente */ 
+    justify-content: flex-end; /* Alinear a la derecha */  
+ 
+   }  
+   
+   nav ul li {  
+    position: relative; /* Hacer relativo para el submenú */  
+    margin:015px; /* Espaciado entre cada opción del menú */  
+   }  
+   
+   nav ul li a {  
+    text-decoration: none; /* Sin subrayado */  
+    color: silver; /* Texto plateado */  
+    font-size:18px; /* Tamaño de la letra */  
+    transition: color0.3s ease; /* Efecto de transición suave para el color */  
+   }  
+   
+   nav ul li a:hover {  
+    color: #fff; /* Color al pasar el cursor (se vuelve blanco) */  
+    text-shadow:0010px rgba(255,255,255,0.7); /* Efecto de "iluminación" */  
+   }  
+   
+   /* Submenú */  
+   .submenu {  
+ visibility: hidden; /* Ocultar el submenú por defecto */  
+ opacity:0; /* Transición de opacidad */  
+ position: absolute;  
+ top:100%;  
+ left:0;  
+ background-color: black;  
+ padding:10px0;  
+ z-index:1000;  
+ transition: visibility0s, opacity0.3s ease; /* Transición suave */  
+}  
+
+nav ul li:hover .submenu {  
+ visibility: visible; /* Hacer visible */  
+ opacity:1; /* Hacer completamente opaco */ 
+ display: block; /* Mostrar el submenú cuando el cursor está sobre el li */  
+ 
+}
+   
+   .submenu li {  
+    margin:0; /* Sin margen para los items del submenú */  
+   }  
+   
+   .submenu li a {  
+
+    padding:10px20px; /* Espaciado interno en los enlaces del submenú */  
+    color: silver; /* Texto plateado para el submenú */  
+    transition: background-color0.3s ease; /* Transición para el fondo */  
+   }  
+   
+   .submenu li a:hover {  
+    background-color: rgba(255,255,255,0.1); /* Fondo al pasar el cursor sobre el submenú */  
+   }  
