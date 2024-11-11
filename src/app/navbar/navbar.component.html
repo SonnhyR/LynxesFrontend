@@ -45,7 +45,8 @@
                 <li><a href="#">Tiktok</a></li>  
                 <li><a href="#">Correo</a></li>  
                 <li><a href="#">WhatsApp</a></li>  
-                <li><a href="#">Quiero ser contactado/a</a></li>  
+                <li class="nav-item" router-outlet="active">
+                    <a class="nav-link" [routerLink]="['/solicitud-service']">Quiero ser contactado/a</a></li>  
             </ul>  
         </li>  
     </ul>  

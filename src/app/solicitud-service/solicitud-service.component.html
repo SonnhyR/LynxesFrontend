@@ -1,1 +1,40 @@
-<p>solicitud-service works!</p>
+<navbar />
+
+<div class="form-container">  
+    <h2>Ingrese sus datos de contacto:</h2>  
+    <form (ngSubmit)="onSubmit()">  
+      <div class="form-group">  
+        <label for="nombre">Nombre y Apellido:</label>  
+        <input type="text" id="nombre" required name="nombre" ngModel>  
+      </div>  
+      
+      <div class="form-group">  
+        <label for="telefono">Teléfono:</label>  
+        <input type="tel" id="telefono" required name="telefono" ngModel>  
+      </div>  
+      
+      <div class="form-group">  
+        <label for="correo">Correo electrónico:</label>  
+        <input type="email" id="correo" required name="correo" ngModel>  
+      </div>  
+      
+      <div class="form-group">  
+        <label for="direccion">Zona de residencia:</label>  
+        <input type="text" id="direccion" required name="direccion" ngModel>  
+      </div>  
+      
+      <div class="form-group">  
+        <label for="horario">Fecha y Hora disponible(para el contacto):</label>  
+        <input type="text" id="horario" required name="horario" ngModel>  
+      </div>  
+      
+      <div class="form-group">  
+        <label for="nota">Nota:</label>  
+        <textarea id="nota" name="nota" ngModel></textarea>  
+      </div>  
+      <div class="btn-group me-2" role="group" aria-label="Second group">
+      <button type="button" class="btn btn-primary">Enviar</button>
+    </div>
+      
+    </form>  
+  </div>

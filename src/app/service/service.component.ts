@@ -1,12 +1,30 @@
-import { Component } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
 
-@Component({
-  selector: 'app-service',
-  standalone: true,
-  imports: [],
-  templateUrl: './service.component.html',
-  styleUrl: './service.component.css'
+@Injectable({
+  providedIn: 'root',
 })
-export class ServiceComponent {
+
+export class Service {
+  private url: string = 'http://localhost:8080/api/Lynxes';
+  constructor (private http: HttpClient) {}
+
+  findAll(): Observable<any[]>{
+    return this.http.get<any>(`${this.url}`);
+  }
+  findById(id:number): Observable<any>{
+    return this.http.get<any>(`${this.url}/${id}`);
+  }
+create (solicitud: any): Observable<any> {
+  return this.http.post<any>(`${this.url}/${solicitud.id}`, solicitud);
+}
+update(solicitud: any): Observable<any>{
+  return this.http.put<any>(`${this.url}/${solicitud.id}`, solicitud);
+}
+remove(id: number): Observable<void>{
+  return this.http.delete<void>(`${this.url}/${id}`);
+}
+
 
 }

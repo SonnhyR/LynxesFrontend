@@ -51,7 +51,7 @@ nav ul li:hover .submenu {
 }
    
    .submenu li {  
-    margin:0; /* Sin margen para los items del submenú */  
+    margin: 1px;0; /* Sin margen para los items del submenú */  
    }  
    
    .submenu li a {  
